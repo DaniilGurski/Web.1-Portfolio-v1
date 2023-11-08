@@ -1,0 +1,64 @@
+
+html {
+    --black: #2f2f2f;
+    --cyan: #88c1ff;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px 20px;
+}
+
+
+.page-title {
+    text-transform: uppercase;
+}
+
+
+.letter-section__heading {
+    position: sticky;
+    top: 0;
+
+    background-color: var(--black);
+    color: var(--cyan);
+
+    padding: .6em;
+    margin: 0;
+}
+
+
+.letter-section__list {
+    list-style-type: none;
+
+    font-size: 1.1rem;
+    line-height: 2em;
+
+    padding: 0px 20px;
+    margin: 0;
+}
+
+
+/* 
+added to create padding that does not create a gap between other sections and ensures 
+that the sticky header is placed on top only
+*/
+.letter-section__fixed-container {
+    height: 170px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.letter-section__easter-egg {
+    opacity: 0;
+    width: 90px;
+    transition: opacity .2s ease-in;
+}
+
+
+.letter-section__easter-egg:hover {
+    opacity: 1;
+}

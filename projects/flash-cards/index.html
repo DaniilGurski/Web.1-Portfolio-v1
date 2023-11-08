@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title> Flashcard generator </title>
+</head>
+
+<body>
+    <header class = "header">
+        <h1 class = "header__title"> Flashcards </h1>
+        <button class = "header__button button" id = "make-card-button"> Make Card </button>
+        <button class = "header__button button" id = "delete-cards-button"> Del Cards </button>
+
+        <script src = "script.js" defer></script>
+    </header>
+
+    <main class = "main"> 
+
+        <div class = "card-creator"> 
+            <h2 class = "card-creator__title"> Create Flashcard </h2>
+            
+            <div class = "card-creator__input-wrapper">
+
+                <label class = "card-creator__label"> 
+                    Question 
+                    <input class = "card-creator__input" type = "text" name = "question-input" id = "question-input">
+                </label>
+
+                <label class = "card-creator__label"> 
+                    Awnser 
+                    <input class = "card-creator__input" type = "text" name = "awnser-input" id = "awnser-input">
+                </label>
+            </div>
+
+            <button class = "card-creator__button button" id = "save-button"> Save </button>
+            <button class = "card-creator__button button" id = "close-button"> Close </button>
+        </div>
+
+        <div class = "card-wrapper">
+        </div>
+        
+    </main>
+        
+</body>
+</html>

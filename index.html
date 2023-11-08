@@ -1,0 +1,208 @@
+<!-- FILL BE UPDATED -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/4b3e562abc.js" crossorigin="anonymous" defer></script>
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <section class = "hero-section">
+        <div class = "hero-section__content">
+            <div class = "hero-section__main"> 
+
+                <div class = "hero-section__text"> 
+                    <h1 class = "hero-section__heading heading"> Lorem ipsum </h1>
+                    <p class = "hero-section__description"> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis volutpat interdum. 
+                    </p>
+                </div>
+
+                <img class = "hero-section__profile-image" src = "assets/hero-section/profile-sized.jpg" alt = "profile"/>
+            </div>
+
+            <nav class = "primary-navigation"> 
+
+                <!-- contact links-->
+                <div class = "contact-links"> 
+                    <a href = "#">
+                        <img src="assets/hero-section/telegram.svg" class = "contact-links__contact-icon">
+                    </a>
+                    <a href = "#">
+                        <img src="assets/hero-section/email.svg" class = "contact-links__contact-icon">
+                    </a>
+                </div>
+
+                <!-- links -->
+                <ul class = "primary-navigation__link-list list">
+
+                    <!-- first link with drop down menu -->
+                    
+                    <li class = "navigation-link primary-menu-link">
+                        Projects <i class = "fa fa-caret-down"> </i>
+
+                        <!-- drop down menu -->
+                        <ul class = "primary-menu drop-down-menu">
+                            <li class = "drop-down-menu__link sub-menu-link"> 
+
+                                Showcase
+
+                                <!-- sub drop down menu-->
+                                <ul class = "sub-menu drop-down-menu"> 
+                                    <li class = "drop-down-menu__link"> <a href = "showcase/flex/index.html" target="_blank"> Flex </a> </li>
+                                    <li class = "drop-down-menu__link"> <a href = "showcase/animation/index.html" target="_blank">Animation</a></li>
+                                    <li class = "drop-down-menu__link"> <a href = "showcase/position/index.html" target="_blank">Position </a></li>
+                                </ul>
+
+                                <li class = "drop-down-menu__link sub-menu-link"> 
+
+                                    Projects
+    
+                                    <!-- sub drop down menu-->
+                                    <ul class = "sub-menu drop-down-menu"> 
+                                        <li class = "drop-down-menu__link"> <a href = "projects/flash-cards/index.html" target="_blank"> Flash cards</a> </li>
+                                        <li class = "drop-down-menu__link"> <a href = "projects/guess-word/index.html" target="_blank"> Guess word</a></li>
+                                        <li class = "drop-down-menu__link"> <a href = "projects/weather/index.html" target="_blank"> Weather app </a></li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- second link with drop down menu -->
+                    <li class = "navigation-link"> 
+                        Home
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <main class = "main">
+        <section class = "project-section"> 
+
+            <h2 class = "project-section__heading heading"> Showcase 💼 </h2>
+            <p class = "project-section__description"> Demonstration of different CSS &amp; HTML features. </p>
+
+            <a href = "showcase/flex/index.html" target="_blank">
+                <div class = "project-wrapper"> 
+                    <img class = "project-wrapper__image" src = "assets/main-section/showcase/flex-grid.png">
+                    
+                    <div class = "project-wrapper__description"> 
+                        <h3 class = "project-wrapper__heading heading"> Flex &amp; Grid </h3>
+
+                        <p class = "project-wrapper__body-text"> 
+                            Simple layout using CSS Grid and Flexbox.
+                        </p> 
+                    </div>
+                </div>
+            </a>
+
+            <a href = "showcase/animation/index.html" target="_blank"> 
+                <div class = "project-wrapper"> 
+                    <img class = "project-wrapper__image" src = "assets/main-section/showcase/animation.png">
+                    
+                    <div class = "project-wrapper__description"> 
+                        <h3 class = "project-wrapper__heading heading">Animation</h3>
+
+                        <p class = "project-wrapper__body-text"> 
+                            Demonstration of animation in CSS.
+                        </p> 
+                    </div>
+                </div>
+            </a>
+
+            <a href = "showcase/position/index.html" target="_blank"> 
+                <div class = "project-wrapper"> 
+                    <img class = "project-wrapper__image" src = "assets/main-section/showcase/position-sticky.png">
+                        
+                    <div class = "project-wrapper__description"> 
+                        <h3 class = "project-wrapper__heading heading"> Position </h3>
+
+                        <p class = "project-wrapper__body-text"> 
+                            This project clearly shows how the position:sticky works in CSS.
+                        </p> 
+                    </div>
+                </div>
+            </a>    
+        </section>
+
+        <section class = "project-section"> 
+
+            <h2 class = "project-section__heading heading"> Projects 💼 </h2>
+            <p class = "project-section__description"> Finished projects using Javascript </p>
+            <a href = "projects/flash-cards/index.html" target = "_blank">
+                <div class = "project-wrapper"> 
+                    <img class = "project-wrapper__image" src = "assets/main-section/projects/flashcards.png">
+                    
+                    <div class = "project-wrapper__description"> 
+                        <h3 class = "project-wrapper__heading heading"> Flashcards </h3>
+
+                        <p class = "project-wrapper__body-text"> 
+                            This website allows you to create functional flashcards demonstrating DOM manipulation with JS.
+                        </p> 
+                    </div>
+                </div>
+            </a>
+
+            <a href = "projects/guess-word/index.html" target = "_blank"> 
+                <div class = "project-wrapper"> 
+                    <img class = "project-wrapper__image" src = "assets/main-section/projects/guess-word.png">
+                    
+                    <div class = "project-wrapper__description"> 
+                        <h3 class = "project-wrapper__heading heading"> Guess Word </h3>
+
+                        <p class = "project-wrapper__body-text"> 
+                            Your task is to guess the mystery word in 7 attempts. 
+                        </p> 
+                    </div>
+                </div>
+            </a>
+
+            <a href = "projects/weather/index.html" target = "_blank"> 
+                <div class = "project-wrapper"> 
+                    <img class = "project-wrapper__image" src = "assets/main-section/projects/weather.png">
+                    
+                    <div class = "project-wrapper__description"> 
+                        <h3 class = "project-wrapper__heading heading"> Weather app </h3>
+
+                        <p class = "project-wrapper__body-text"> 
+                            Classical weather application using an API.
+                        </p> 
+                    </div>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <footer class = "footer"> 
+        <div class = "footer__contact-links contact-links"> 
+            <a href = "#">
+                <img src="assets/hero-section/telegram.svg" class = "contact-links__contact-icon">
+            </a>
+            <a href = "#">
+                <img src="assets/hero-section/email.svg" class = "footer__contact-icon contact-icon">
+            </a>
+        </div>
+
+        <ul class="list footer__navigation">
+            <li><a href="#" class="footer__navigation-link">Home</a></li>
+            <li><a href="#" class="footer__navigation-link">About</a></li>
+            <li><a href="#" class="footer__navigation-link">Projects</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

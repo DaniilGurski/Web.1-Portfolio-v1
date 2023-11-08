@@ -1,0 +1,180 @@
+
+html {
+    height: 100%;
+}
+
+
+body {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    overflow: hidden;
+}
+
+
+.blur-background {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background: url("Assets/main.t.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.blur-background::after {
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    
+    backdrop-filter: blur(2px);
+    pointer-events: none;
+
+}
+
+
+.word-container {
+    width: 270px;
+    height: 270px;
+
+    background: #32312a7a;
+
+    border: 2px solid #3f3d359c;
+    border-radius: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1em;
+}
+
+
+.word-letters-container {
+    font-size: 3rem;
+    display: flex;
+    gap: 0.3rem;
+}
+
+
+.word-letters-container div {
+    width: 20px;
+
+    color: transparent;
+    border-bottom: 3px solid white;
+
+    text-align: center;
+    user-select: none;
+}
+
+
+.word-letters-container .show-word-letter {
+    color: white;
+    border: none;
+
+    margin-bottom: 8px;
+}
+
+
+.guess-count-container {
+    color: #adadad;
+    font-size: 1.4rem;
+}
+
+
+.guess-count-span {
+    color: white;
+}
+
+
+.input-container {
+    width: 50%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.letter-button {
+    width: 45px;
+    height: 45px;
+
+    background: #5653467a;
+    border: none;
+    box-shadow: 1px 3px 6px #292929;;
+    color: #ded5b1;
+
+    user-select: none;
+    transition: .1s ease-out opacity;
+}
+
+
+.disabled-letter-button {
+    pointer-events: none;
+    opacity: .5;
+}
+
+
+.game-result-window {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-block: 10px;
+
+    transform: translate(-50%, -50%);
+
+    width: 30%;
+    height: 40%;
+
+    background-color: #dad5b6f5;
+}
+
+/* displays the game result window, adding flex */
+.result-window-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.game-result-text {
+    font-size: 2rem;
+    color: #61615bf5;
+    margin: 0;
+}
+
+
+.play-again-button {
+    font-size: 1rem;
+    padding: 1em;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #b69e70;
+    color: #5c5446;
+}
+
+
+.word-reveal {
+    font-size: 1.1rem;
+    color: #61615bf5;
+}
+
+
+.none-display {
+    display: none;
+}

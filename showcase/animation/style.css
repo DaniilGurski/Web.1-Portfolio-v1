@@ -1,0 +1,188 @@
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 10% 1fr;
+}
+
+
+.aside { 
+    font-size: 2rem;
+    writing-mode: vertical-rl;
+
+    background-color: rgb(202, 202, 202);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: span 2;
+}
+
+
+.aside__vertical-text {
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transform: scale(-1);
+
+    color: rgb(118, 118, 118);
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header__navigation {
+    height: 100%;
+}
+
+
+.header__navigation-list {
+    list-style-type: none;
+    height: 100%;
+    
+    display: flex;
+    gap: 4rem;
+
+    padding: 0;
+    margin:0
+}
+
+
+.header__navigation-list-item {
+    display: flex;
+    align-items: center;
+
+    padding: 0px 30px;
+
+    position: relative;
+    user-select: none;
+}
+
+
+.header__navigation-list-item::after {
+    content: ""; 
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    height: 0%;
+    width: 0%;
+    
+    margin: 0 auto;
+
+    background-color: rgb(32, 32, 32);
+}
+
+
+.header__navigation-list-item:hover:after {
+    animation: .4s ease-out 0s 1 running forwards hoverAnimation;
+}
+
+
+.header__navigation-list-item:hover {
+    color: white;
+    transition: color .7s linear;
+}
+
+
+.main {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main_content-wrapper {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}  
+
+
+.container {
+
+    height: 80%;
+    border-radius: 16px;
+
+    /* NOTE FOR AUTHOR 
+       The 3 pixels tell you how long it takes for the color aliceblue to change to a darker blue color
+       10px is how many pixels later we repeat the gradient.
+    */
+    background-image: repeating-linear-gradient(140deg, aliceblue, rgb(169, 194, 216) 3px, rgb(169, 194, 216) 10px);
+}
+
+
+.container__iframe {
+    width: 50%;
+    height: 50%;
+    
+    border-radius: inherit;
+    border: none;
+
+    display: grid;
+    place-content: center;
+    /* duration, time-function, delay, iteration-count, play-state, animation-name */
+    animation: 4s ease-in-out 0s infinite running sliding;
+}
+
+
+.container__box-text {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.animation-toggle-button {
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    padding-block: 10px;
+}
+
+
+.pause-animation {
+    animation-play-state: paused;
+}
+
+
+@keyframes hoverAnimation {
+    0%{
+        width: 0%;
+        height: 0%;
+    }
+
+    50%{
+        height: 4px;
+        width: 100%;
+    }
+
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+@keyframes sliding {
+    0% {transform: translate(0%, 0%);}
+    25% {transform: translate(100%, 0%);}
+    50% {transform: translate(100%, 100%);}
+    75% {transform: translate(0%, 100%);}
+}
+
