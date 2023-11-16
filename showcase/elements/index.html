@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GOOGLE FONTS- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS -->
+    <script src="autoFill.js" defer> </script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__content-wrapper content-wrapper">
+            <h1 class="header__main-title heading"> WEBB01 - ELEMENT &amp; EGENSKAPER </h1>
+
+            <nav class="header__navigation">
+                <ul class="primary-navigation">
+                    <li class="primary-navigation__item first">
+                        <a href="#" class="primary-navigation__link">Hem</a>
+                    </li>
+
+                    <li class="primary-navigation__item">
+                        <a href="#" class="primary-navigation__link">Grunderna</a>
+                    </li>
+
+                    <li class="primary-navigation__item">
+                        <a href="#" class="primary-navigation__link">Genvägar</a>
+                    </li>
+
+                    <li class="primary-navigation__item">
+                        <a href="#" class="primary-navigation__link">Om mig</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main__content-wrapper content-wrapper">
+        <main class="main">
+            <!-- 
+                Den här delen kan fyllas i automatiskt med hjälp av ett js-script jag gjorde, 
+                men för att se den här delen i github var jag tvungen att manuellt infoga den.
+            -->
+            <!-- HTML -->
+            <section id="HTML" class="main-section">
+                <h2 class="heading">HTML</h2>
+
+                <section class="sub-section" id="struktur">
+                    <h3 class="heading">struktur</h3>
+                    <div class="tag-board">
+                        <p>&lt;!DOCTYPE&gt;</p>
+                        <p>Deklaration för att ange HTML-dokumentets version.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;html&gt;</p>
+                        <p>Definierar en HTML-dokument.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;head&gt;</p>
+                        <p>Innehåller metadata om dokumentet.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;title&gt;</p>
+                        <p>Används för att definiera dokumentets titel i webbläsarens flik eller fönster.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;style&gt;</p>
+                        <p>Används för att definiera inbäddad CSS-stil för ett HTML-dokument.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;link&gt;</p>
+                        <p>Används för att länka till externa resurser som CSS-stilar eller ikoner.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;body&gt;</p>
+                        <p>Innehåller synligt innehåll på webbsidan.</p>
+                    </div>
+                </section>
+                
+                <section class="sub-section" id="semantiska-element-layout">
+                    <h3 class="heading">semantiska element och layout</h3>
+                    <div class="tag-board">
+                        <p>&lt;main&gt;</p>
+                        <p>Innehåller huvudinnehållet på webbsidan.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;header&gt;</p>
+                        <p>Representerar sidans inledning eller sidhuvud.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;section&gt;</p>
+                        <p>Delar upp dokumentet i avsnitt.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;footer&gt;</p>
+                        <p>Representerar sidans slut eller sidfot.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;article&gt;</p>
+                        <p>Används för fristående innehåll som nyhetsartiklar.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;aside&gt;</p>
+                        <p>Innehåller innehåll som är sidospårigt från det huvudsakliga innehållet.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;div&gt;</p>
+                        <p>Används för att gruppera och formatera innehåll.</p>
+                    </div>
+                </section>
+
+                <section class="sub-section" id="text-rubriker">
+                    <h3 class="heading">text och rubriker</h3>
+                    <div class="tag-board">
+                        <p>&lt;p&gt;</p>
+                        <p>Används för vanlig text.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>headings (&lt;h1&gt;-&lt;h6&gt;)</p>
+                        <p>Används för rubriker av olika nivåer.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;ol&gt;</p>
+                        <p>Skapar en ordnad lista.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;ul&gt;</p>
+                        <p>Skapar en oordnad lista.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;li&gt;</p>
+                        <p>Representerar ett listelement inom en lista.</p>
+                    </div>
+                </section>
+                
+                <section class="sub-section" id="inline-element">
+                    <h3 class="heading">inline element</h3>
+                    <div class="tag-board">
+                        <p>&lt;a&gt;</p>
+                        <p>Skapar en länk till en annan webbsida eller resurs.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;span&gt;</p>
+                        <p>Används för att applicera stilar på en del av texten.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;strong&gt;</p>
+                        <p>Gör texten fetstil.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>&lt;em&gt;</p>
+                        <p>Gör texten kursiv.</p>
+                    </div>
+                </section>
+            </section>
+
+            <!-- CSS -->
+            <section id="CSS" class="main-section">
+                <h2 class="heading">CSS</h2>
+                <section class="sub-section" id="typsnitt och text">
+                    <h3 class="heading">typsnitt och text</h3>
+                    <div class="tag-board">
+                        <p>font-family</p>
+                        <p>Anger vilket typsnitt som ska användas för text.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>font-weight</p>
+                        <p>Styr textens fetstil.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>font-size</p>
+                        <p>Bestämmer storleken på texten.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>text-decoration</p>
+                        <p>Kontrollerar dekoreringar för text som understrykning eller överstrykning.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>text-transform</p>
+                        <p>Ändrar bokstavsfallet för text, t.ex., till versaler eller gemener.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>text-align</p>
+                        <p>Centrerar, justerar eller positionerar text inom ett element</p>
+                    </div>
+                </section>
+
+                <section class="sub-section" id="färger">
+                    <h3 class="heading">färger</h3>
+                    <div class="tag-board">
+                        <p>color</p>
+                        <p>Bestämmer textens färg.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>background-color</p>
+                        <p>Anger bakgrundens färg.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>background linear-gradient(...)</p>
+                        <p>Skapar en linjär gradient som bakgrund.</p>
+                    </div>
+                </section>
+
+                <section class="sub-section" id="box">
+                    <h3 class="heading">box</h3>
+                    <div class="tag-board">
+                        <p>width</p>
+                        <p>Bestämmer bredden på ett element.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>height</p>
+                        <p>Kontrollerar höjden på ett element.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>max-width</p>
+                        <p>Anger den maximala bredden för ett element.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>min-height</p>
+                        <p>Anger den minimala höjden för ett element.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>margin</p>
+                        <p>Kontrollerar marginalen runt ett element.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>margin-inline</p>
+                        <p>Hanterar marginal längs sidorna för inline-element.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>padding</p>
+                        <p>Bestämmer fyllnadsmarginalen inuti ett element.</p>
+                    </div>
+                </section>
+
+                <section class="sub-section" id="layout-display">
+                    <h3 class="heading">layout och display</h3>
+                    <div class="tag-board tag-board--secret">
+                        <p>display</p>
+                        <p>Bestämmer hur ett element ska visas, t.ex., som block eller inline.</p>
+                        <img src="assets/easter-egg.png" class="tag-board__easter-egg"/>
+                    </div>
+                    <div class="tag-board">
+                        <p>justify-content</p>
+                        <p>Kontrollerar horisontell justering av element i en flex-container.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>align-items</p>
+                        <p>Kontrollerar vertikal justering av element i en flex-container.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>flex-direction</p>
+                        <p>Bestämmer riktningen för flex-element i en container.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>gap</p>
+                        <p>Skapar mellanrum mellan element i en flex-container.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>position</p>
+                        <p>Styr elementets position på sidan.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>inset</p>
+                        <p>Används för att justera elementets placering i förhållande till dess överordnade element.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>top, right, bottom, left</p>
+                        <p>Anger avståndet från elementets kant till dess förälder.</p>
+                    </div>
+                </section>
+
+                <section class="sub-section" id="annat">
+                    <h3 class="heading">annat</h3>
+                    <div class="tag-board">
+                        <p>object-fit</p>
+                        <p>Hanterar hur innehåll, som bilder, anpassas i sina förälderelement.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>aspect-ratio</p>
+                        <p>Sätter ett elements höjdbreddförhållande.</p>
+                    </div>
+                    <div class="tag-board">
+                        <p>first-child, last-child, nth-child</p>
+                        <p>Riktar in specifika element inom sitt förälderelement.</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <aside class="content-panel">
+            <p class="content-panel__title"> Innehåll </p>
+
+            <ol class="content-panel__list" type="I">
+                <li>
+                    <a href="#HTML" class="content-panel__link"> HTML </a>
+                    <ol class="content-panel__list">
+                        <li><a href="#struktur" class="content-panel__link">Struktur</a></li>
+                        <li>
+                            <a href="#semantiska-element-layout" class="content-panel__link">Sem.element och layout</a>
+                        </li>
+                        <li><a href="#text-rubriker" class="content-panel__link">Text och rubriker</a></li>
+                        <li><a href="#inline-element" class="content-panel__link">Inline element</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="#CSS" class="content-panel__link"> CSS </a>
+                    <ol class="content-panel__list">
+                        <li><a href="#typsnitt och text" class="content-panel__link">Typsnitt och Text</a></li>
+                        <li><a href="#färger" class="content-panel__link">Färger</a></li>
+                        <li><a href="#box" class="content-panel__link">Box</a></li>
+                        <li><a href="#layout-display" class="content-panel__link">Layout och display</a></li>
+                        <li><a href="#annat" class="content-panel__link">Annat</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </aside>
+    </div>
+</body>
+</html>

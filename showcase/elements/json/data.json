@@ -1,0 +1,89 @@
+{
+    "HTML": {
+        "struktur" : {
+            "<!DOCTYPE>": "Deklaration för att ange HTML-dokumentets version.",
+            "<html>": "Definierar en HTML-dokument.",
+            "<head>": "Innehåller metadata om dokumentet.",
+            "<title>": "Används för att definiera dokumentets titel i webbläsarens flik eller fönster.",
+            "<style>": "Används för att definiera inbäddad CSS-stil för ett HTML-dokument.",
+            "<link>": "Används för att länka till externa resurser som CSS-stilar eller ikoner.",
+            "<body>": "Innehåller synligt innehåll på webbsidan."
+        },
+
+        "semantiska element och layout": {
+            "<main>": "Innehåller huvudinnehållet på webbsidan.",
+            "<header>": "Representerar sidans inledning eller sidhuvud.",
+            "<section>": "Delar upp dokumentet i avsnitt.",
+            "<footer>": "Representerar sidans slut eller sidfot.",
+            "<article>": "Används för fristående innehåll som nyhetsartiklar.",
+            "<aside>": "Innehåller innehåll som är sidospårigt från det huvudsakliga innehållet.",
+            "<div>": "Används för att gruppera och formatera innehåll."
+        },
+
+        "text och rubriker" : {
+            "<p>": "Används för vanlig text.",
+            "headings (<h1>-<h6>)": "Används för rubriker av olika nivåer.",
+            "<ol>": "Skapar en ordnad lista.",
+            "<ul>": "Skapar en oordnad lista.",
+            "<li>": "Representerar ett listelement inom en lista."
+        },
+
+        "inline element" : {
+            "<a>": "Skapar en länk till en annan webbsida eller resurs.",
+            "<span>": "Används för att applicera stilar på en del av texten.",
+            "<strong>": "Gör texten fetstil.",
+            "<em>": "Gör texten kursiv."
+        }
+    },
+
+    "CSS": {
+        "typsnitt och text" : {
+            "font-family": "Anger vilket typsnitt som ska användas för text.",
+            "font-weight": "Styr textens fetstil.",
+            "font-size": "Bestämmer storleken på texten.",
+            "text-decoration": "Kontrollerar dekoreringar för text som understrykning eller överstrykning.",
+            "text-transform": "Ändrar bokstavsfallet för text, t.ex., till versaler eller gemener.",
+            "text-align": "Centrerar, justerar eller positionerar text inom ett element"
+        },
+
+
+        "färger" : {
+            "color": "Bestämmer textens färg.",
+            "background-color": "Anger bakgrundens färg.",
+            "background linear-gradient(...)": "Skapar en linjär gradient som bakgrund."
+        },
+        
+
+        "box" : {
+            "width": "Bestämmer bredden på ett element.",
+            "height": "Kontrollerar höjden på ett element.",
+            "max-width": "Anger den maximala bredden för ett element.",
+            "min-height": "Anger den minimala höjden för ett element.",
+
+            "margin": "Kontrollerar marginalen runt ett element.",
+            "margin-inline": "Hanterar marginal längs sidorna för inline-element.",
+
+            "padding": "Bestämmer fyllnadsmarginalen inuti ett element."
+        },
+
+
+        "layout och display": {
+            "display": "Bestämmer hur ett element ska visas, t.ex., som block eller inline.",
+            "justify-content": "Kontrollerar horisontell justering av element i en flex-container.",
+            "align-items": "Kontrollerar vertikal justering av element i en flex-container.",
+            "flex-direction": "Bestämmer riktningen för flex-element i en container.",
+            "gap": "Skapar mellanrum mellan element i en flex-container.",
+
+            "position": "Styr elementets position på sidan.",
+            "inset": "Används för att justera elementets placering i förhållande till dess överordnade element.",
+            "top, right, bottom, left": "Anger avståndet från elementets kant till dess förälder."
+
+        },
+
+        "annat" : {
+            "object-fit": "Hanterar hur innehåll, som bilder, anpassas i sina förälderelement.",
+            "aspect-ratio": "Sätter ett elements höjdbreddförhållande.",
+            "first-child, last-child, nth-child": "Riktar in specifika element inom sitt förälderelement."
+        }
+    }
+}
